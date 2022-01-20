@@ -9,9 +9,6 @@ import { ButtonInfo } from "./mixins";
 
 @Component
 export default class ButtonExample2 extends mixins(ButtonInfo) {
-  buttonText = "";
-  created(): void {
-    this.buttonText = this.getInfo("Products");
-  }
+  infoName = "Products";
 }
 </script>

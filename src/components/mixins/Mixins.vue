@@ -34,10 +34,5 @@ import ButtonExample2 from "./ButtonExample2.vue";
     ButtonExample2,
   },
 })
-export default class Mixins extends mixins(ButtonInfo) {
-  buttonText = "";
-  created(): void {
-    this.buttonText = this.getInfo("Order");
-  }
-}
+export default class Mixins extends mixins(ButtonInfo) {}
 </script>
